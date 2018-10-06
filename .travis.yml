@@ -1,0 +1,30 @@
+sudo: required
+dist: trusty
+language: node_js
+node_js:
+- node
+addons:
+apt:
+  sources:
+  - google-chrome
+  packages:
+  - google-chrome-stable
+  - google-chrome-beta
+  - google-chrome-latest
+before_install:
+- export CHROME_BIN=chromium-browser
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+before_script:
+- npm install
+- npm i -g angular-cli-ghpages
+script:
+- npm run lint
+- npm run sass-lint
+- npm run ng test -- --watch=false
+- npm run style
+- npm run spell
+- npm run build -- --prod
+after_success:
+    #- echo "qmtis.com" > dist/CNAME
+    - ngh --repo=https://GH_TOKEN@github.com/dolanmiu/sydney-chamber.git --name="Travis CI" --email=dolan_miu@hotmail.com --no-silent
