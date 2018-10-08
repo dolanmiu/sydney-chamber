@@ -1,6 +1,8 @@
 $bg-color: rgb(34, 34, 34);
+$text-color: #fff;
 
 :host {
     background-color: $bg-color;
+    color: $text-color;
     display: block;
 }
