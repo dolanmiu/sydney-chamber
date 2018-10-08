@@ -1,0 +1,9 @@
+// You can add global styles to this file, and also import other style files
+@import url('https://fonts.googleapis.com/css?family=Krub:200|Open+Sans:300');
+@import 'variables';
+
+h1 {
+    font-family: $primary-font-family;
+    font-weight: 200;
+    line-height: 1.5em;
+}

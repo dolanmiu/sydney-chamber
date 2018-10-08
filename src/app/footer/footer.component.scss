@@ -1,8 +1,30 @@
-$bg-color: rgb(34, 34, 34);
+@import 'variables';
+
+$bg-color: rgb(26, 26, 37);
 $text-color: #fff;
 
 :host {
     background-color: $bg-color;
     color: $text-color;
     display: block;
+    padding: 60px 0 100px;
+}
+
+.logos {
+    display: flex;
+    text-align: right;
+
+    span {
+        margin-left: 15px;
+    }
+}
+
+.email {
+    font-family: $primary-font-family;
+    font-size: 2rem;
+    line-height: 1.5em;
+
+    span {
+        font-size: 1.5rem;
+    }
 }
