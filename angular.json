@@ -23,6 +23,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/semantic-ui-css/semantic.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,5 +124,10 @@
       }
     }
   },
-  "defaultProject": "sydney-chamber"
+  "defaultProject": "sydney-chamber",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
