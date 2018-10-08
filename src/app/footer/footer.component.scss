@@ -4,10 +4,12 @@ $bg-color: rgb(26, 26, 37);
 $text-color: #fff;
 
 :host {
-    background-color: $bg-color;
+    background: $bg-color url('/assets/sydney-skyline.png') repeat-x center bottom;
+    background-size: 600px;
     color: $text-color;
     display: block;
     padding: 60px 0 100px;
+    position: relative;
 }
 
 .logos {
@@ -27,4 +29,11 @@ $text-color: #fff;
     span {
         font-size: 1.5rem;
     }
+}
+
+.skyline {
+    bottom: 0;
+    content: url('/assets/sydney-skyline.png');
+    position: absolute;
+    width: 100%;
 }
