@@ -39,7 +39,7 @@ rules:
   no-transition-all: 2
   no-universal-selectors: 0
   no-url-domains: 0
-  no-url-protocols: 2
+  no-url-protocols: 0
   no-vendor-prefixes: 1
   no-warn: 2
   property-units: 0
@@ -67,7 +67,7 @@ rules:
   empty-args: 2
   hex-length: 2
   hex-notation: 2
-  indentation: 
+  indentation:
     - 2
     -
       size: 4
@@ -96,4 +96,3 @@ rules:
   # Final Items
   trailing-semicolon: 2
   final-newline: 2
-  
