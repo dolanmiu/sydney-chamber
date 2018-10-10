@@ -28,6 +28,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+# Mood Board
+http://www.cultivatedwit.com/ - front splash screen, other pages
+https://www.awwwards.com/inspiration/5874c420e138233caf3ea56c - footer
+https://www.agence-me.com/us/ - about layout
+https://www.couleecreative.com/our-work/discovery - other pages
+
 -----
 
 Made with 💖
