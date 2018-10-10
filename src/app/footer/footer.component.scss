@@ -37,3 +37,20 @@ $text-color: #fff;
     position: absolute;
     width: 100%;
 }
+
+.social-media {
+    border: solid 1px $text-color;
+    border-radius: 50%;
+    height: 70px;
+    margin-left: 10px;
+    padding-top: 20px;
+    transition: background-color .25s;
+    transition: color .25s;
+    width: 70px;
+
+    &:hover {
+        background-color: $text-color;
+        color: $bg-color;
+        cursor: pointer;
+    }
+}
