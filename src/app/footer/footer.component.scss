@@ -44,8 +44,7 @@ $text-color: #fff;
     height: 70px;
     margin-left: 10px;
     padding-top: 20px;
-    transition: background-color .25s;
-    transition: color .25s;
+    transition: background-color .25s, color .25s;
     width: 70px;
 
     &:hover {
