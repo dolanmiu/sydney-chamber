@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer, HostBinding } from '@angular/core';
 
 @Component({
     selector: 'app-nav-bar',
@@ -6,7 +6,15 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./nav-bar.component.scss'],
 })
 export class NavBarComponent implements OnInit {
-    constructor() {}
+    @HostBinding('class.unscrolled')
+    public unscrolled = true;
+
+    constructor(renderer: Renderer) {
+        renderer.listenGlobal('window', 'scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+            this.unscrolled = scrollTop < 60 ? true : false;
+        });
+    }
 
     public ngOnInit(): void {}
 }

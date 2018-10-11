@@ -6,8 +6,13 @@ $bg-color: rgb(47, 45, 51);
     background-color: $bg-color;
     height: 100px;
     position: fixed;
+    transition: background-color .25s;
     width: 100%;
     z-index: 10;
+
+    &.unscrolled {
+        background-color: transparent;
+    }
 }
 
 .items {
