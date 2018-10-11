@@ -19,6 +19,10 @@ $text-color: #fff;
         height: 50px;
         margin-right: auto;
         width: 50px;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
