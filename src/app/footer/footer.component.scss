@@ -1,12 +1,11 @@
 @import 'variables';
 
 $bg-color: rgb(26, 26, 37);
-$text-color: #fff;
 
 :host {
     background: $bg-color url('/assets/sydney-skyline.png') repeat-x center bottom;
     background-size: 600px;
-    color: $text-color;
+    color: $text-color-inverse;
     display: block;
     padding: 60px 0 100px;
     position: relative;
@@ -39,7 +38,7 @@ $text-color: #fff;
 }
 
 .social-media {
-    border: solid 1px $text-color;
+    border: solid 1px $text-color-inverse;
     border-radius: 50%;
     height: 70px;
     margin-left: 10px;
@@ -48,7 +47,7 @@ $text-color: #fff;
     width: 70px;
 
     &:hover {
-        background-color: $text-color;
+        background-color: $text-color-inverse;
         color: $bg-color;
         cursor: pointer;
     }

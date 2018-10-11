@@ -1,5 +1,6 @@
+@import 'variables';
+
 $bg-color: rgb(47, 45, 51);
-$text-color: #fff;
 
 :host {
     background-color: $bg-color;
@@ -42,7 +43,7 @@ li {
     float: left;
 
     a {
-        color: $text-color;
+        color: $text-color-inverse;
         display: block;
         padding: 14px 16px;
         text-align: center;
