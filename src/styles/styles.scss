@@ -5,6 +5,6 @@
 h1 {
     // sass-lint:disable no-important
     font-family: $primary-font-family !important;
-    font-weight: 200;
-    line-height: 1.5em;
+    font-weight: 200 !important;
+    line-height: 1.5em !important;
 }
