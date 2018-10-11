@@ -1,13 +1,51 @@
-$bg-color: #ff0;
+$bg-color: rgb(47, 45, 51);
+$text-color: #fff;
 
 :host {
-    display: block;
-    height: 100px;
-}
-
-.fixed {
     background-color: $bg-color;
     height: 100px;
     position: fixed;
     width: 100%;
+    z-index: 10;
+}
+
+.items {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    .logo {
+        height: 50px;
+        margin-right: auto;
+        width: 50px;
+    }
+}
+
+.full {
+    height: calc(100% - 14px);
+    margin-top: 14px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+li {
+    float: left;
+
+    a {
+        color: $text-color;
+        display: block;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+
+        &:hover {
+            color: $bg-color;
+        }
+    }
 }

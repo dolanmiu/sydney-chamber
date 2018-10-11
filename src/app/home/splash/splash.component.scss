@@ -1,0 +1,12 @@
+:host {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.padded {
+    margin-bottom: 50px;
+}
