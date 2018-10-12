@@ -33,6 +33,7 @@ http://www.cultivatedwit.com/ - front splash screen, other pages
 https://www.awwwards.com/inspiration/5874c420e138233caf3ea56c - footer
 https://www.agence-me.com/us/ - about layout
 https://www.couleecreative.com/our-work/discovery - other pages
+https://soundcloud-ngrx.herokuapp.com/ - Discography display
 
 -----
 
