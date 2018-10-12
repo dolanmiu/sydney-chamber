@@ -4,11 +4,12 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { FooterModule } from './footer/footer.module';
 import { NavBarModule } from './nav-bar/nav-bar.module';
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 describe('AppComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [AppComponent],
+            declarations: [AppComponent, ScrollToTopComponent],
             imports: [FooterModule, NavBarModule, RouterTestingModule],
         }).compileComponents();
     }));

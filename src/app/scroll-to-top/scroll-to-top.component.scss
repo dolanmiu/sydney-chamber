@@ -1,0 +1,51 @@
+@import 'variables';
+
+:host {
+    bottom: 70px;
+    position: fixed;
+    right: 70px;
+    transition: opacity .25s;
+
+    &.unscrolled {
+        opacity: 0;
+        pointer-events: none;
+
+        .flex-box {
+            // sass-lint:disable nesting-depth
+            .side-text {
+                margin-right: -60px;
+            }
+        }
+    }
+}
+
+.clickable {
+    cursor: pointer;
+
+    i {
+        transition: color .25s;
+    }
+
+    &:hover {
+        .fa-circle {
+            color: $text-color-inverse;
+        }
+
+        .fa-chevron-up {
+            color: $text-color;
+        }
+    }
+}
+
+.flex-box {
+    align-items: center;
+    display: flex;
+
+    .side-text {
+        font-size: .7em;
+        margin-right: 10px;
+        pointer-events: none;
+        text-transform: uppercase;
+        transition: margin-right .25s;
+    }
+}

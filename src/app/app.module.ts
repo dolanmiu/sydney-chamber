@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { FooterModule } from './footer/footer.module';
 import { HomeModule } from './home/home.module';
 import { NavBarModule } from './nav-bar/nav-bar.module';
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 @NgModule({
-    declarations: [AppComponent],
+    declarations: [AppComponent, ScrollToTopComponent],
     imports: [NgxPageScrollModule, BrowserModule, NavBarModule, FooterModule, AppRoutingModule, HomeModule],
     providers: [],
     bootstrap: [AppComponent],
