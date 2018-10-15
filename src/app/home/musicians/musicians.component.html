@@ -1,0 +1,7 @@
+<h1>Musicians</h1>
+
+<ngx-masonry>
+    <ngxMasonryItem class="masonry-item" *ngFor="let musician of musicians">
+        <app-musician-card [name]="musician.name"></app-musician-card>
+    </ngxMasonryItem>
+</ngx-masonry>
