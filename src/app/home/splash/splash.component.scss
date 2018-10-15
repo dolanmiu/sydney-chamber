@@ -30,3 +30,19 @@
         }
     }
 }
+
+.dancing {
+    animation: dance 2s ease infinite;
+    transform: translateY(0);
+}
+
+@keyframes dance {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
