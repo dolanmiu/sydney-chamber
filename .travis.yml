@@ -25,8 +25,8 @@ script:
 - npm run ng test -- --watch=false
 - npm run style
 - npm run spell
-#- npm run build -- --prod
-- npm run build -- --prod --base-href "/sydney-chamber/"
+- npm run build -- --prod
+# - npm run build -- --prod --base-href "/sydney-chamber/"
 after_success:
-    #- echo "qmtis.com" > dist/CNAME
+    - echo "thechamberproject.com.au" > dist/CNAME
     - ngh --repo=https://GH_TOKEN@github.com/dolanmiu/sydney-chamber.git --name="Travis CI" --email=dolan_miu@hotmail.com --no-silent --dir=dist/sydney-chamber
