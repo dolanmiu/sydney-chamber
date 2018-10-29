@@ -1,16 +1,8 @@
-outlayer@2.1.1
-MIT
-MIT
-
-imagesloaded@4.1.4
-MIT
-MIT
-
 ev-emitter@1.1.1
 MIT
 MIT
 
-masonry-layout@4.2.2
+outlayer@2.1.1
 MIT
 MIT
 
@@ -19,6 +11,14 @@ MIT
 MIT
 
 fizzy-ui-utils@2.0.7
+MIT
+MIT
+
+masonry-layout@4.2.2
+MIT
+MIT
+
+imagesloaded@4.1.4
 MIT
 MIT
 
