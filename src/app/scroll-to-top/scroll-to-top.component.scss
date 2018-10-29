@@ -17,6 +17,14 @@
             }
         }
     }
+
+    &.inverted {
+        color: $text-color-inverse;
+
+        .fa-chevron-up {
+            color: $text-color;
+        }
+    }
 }
 
 .clickable {
