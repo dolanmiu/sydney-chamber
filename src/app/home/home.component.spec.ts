@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { DiscographyModule } from '../discography/discography.module';
 import { AboutModule } from './about/about.module';
 import { EventsModule } from './events/events.module';
 import { HomeComponent } from './home.component';
@@ -13,7 +14,7 @@ describe('HomeComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [HomeComponent],
-            imports: [EventsModule, MusiciansModule, AboutModule, SplashModule],
+            imports: [EventsModule, MusiciansModule, AboutModule, SplashModule, DiscographyModule],
         }).compileComponents();
     }));
 
