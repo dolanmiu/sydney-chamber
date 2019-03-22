@@ -1,10 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AboutComponent } from './about/about.component';
+import { AboutModule } from './about/about.module';
 import { EventsModule } from './events/events.module';
 import { HomeComponent } from './home.component';
 import { MusiciansModule } from './musicians/musicians.module';
-import { SplashComponent } from './splash/splash.component';
+import { SplashModule } from './splash/splash.module';
 
 describe('HomeComponent', () => {
     let component: HomeComponent;
@@ -12,8 +12,8 @@ describe('HomeComponent', () => {
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [HomeComponent, SplashComponent, AboutComponent],
-            imports: [EventsModule, MusiciansModule],
+            declarations: [HomeComponent],
+            imports: [EventsModule, MusiciansModule, AboutModule, SplashModule],
         }).compileComponents();
     }));
 

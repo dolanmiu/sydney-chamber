@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { HeroImageComponent } from './hero-image/hero-image.component';
 import { SplashComponent } from './splash.component';
 
 describe('SplashComponent', () => {
@@ -8,7 +9,7 @@ describe('SplashComponent', () => {
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [SplashComponent],
+            declarations: [SplashComponent, HeroImageComponent],
         }).compileComponents();
     }));
 
