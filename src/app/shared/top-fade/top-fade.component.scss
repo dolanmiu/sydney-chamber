@@ -1,0 +1,18 @@
+@import 'variables';
+
+:host {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.wrapper {
+    bottom: 0;
+    height: 200px;
+    position: absolute;
+    width: 100%;
+}
+
+path {
+    fill: $primary-color;
+}

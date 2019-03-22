@@ -1,3 +1,11 @@
+@import 'variables';
+
 :host {
+    background-color: $primary-color;
+    color: $text-color-inverse;
+    display: block;
+}
+
+.container {
     padding: 100px 0;
 }

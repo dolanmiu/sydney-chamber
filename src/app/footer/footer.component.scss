@@ -7,7 +7,6 @@ $bg-color: rgb(26, 26, 37);
     background-size: 600px;
     color: $text-color-inverse;
     display: block;
-    padding: 60px 0 150px;
     position: relative;
 }
 
@@ -51,4 +50,8 @@ $bg-color: rgb(26, 26, 37);
         color: $bg-color;
         cursor: pointer;
     }
+}
+
+.container {
+    padding: 0 0 150px;
 }
