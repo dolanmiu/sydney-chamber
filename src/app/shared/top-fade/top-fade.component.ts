@@ -1,15 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-top-fade',
-  templateUrl: './top-fade.component.html',
-  styleUrls: ['./top-fade.component.scss']
+    selector: 'app-top-fade',
+    templateUrl: './top-fade.component.html',
+    styleUrls: ['./top-fade.component.scss'],
 })
-export class TopFadeComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+export class TopFadeComponent {
+    constructor() {}
 }
