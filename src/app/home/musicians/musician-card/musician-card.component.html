@@ -1,2 +1,12 @@
-<img src="/assets/musicians/evan.jpg">
-{{name}}
+<div class="wrapper" (mouseenter)="show = true" (mouseleave)="show = false">
+    <img src="/assets/musicians/evan.jpg" [ngClass]="{ show: show }" />
+    <div class="details" [ngClass]="{ show: show }">
+        <p class="name">{{ name }}</p>
+
+        <p class="description">Testing</p>
+
+        <p class="social-media">
+            <i class="fab fa-fw fa-linkedin-in"></i>
+        </p>
+    </div>
+</div>

@@ -1,7 +1,44 @@
+@import 'variables';
+
+$timing: 0.2s;
+
 :host {
     display: block;
+    position: relative;
+}
+
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
 }
 
 img {
+    transition: transform $timing, filter $timing;
     width: 100%;
+
+    &.show {
+        filter: brightness(20%);
+        transform: scale(1.1);
+    }
+}
+
+.details {
+    align-items: center;
+    align-self: center;
+    color: $text-color-inverse;
+    display: flex;
+    filter: opacity(0);
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    // pointer-events: none;
+    position: absolute;
+    top: 0;
+    transition: transform $timing, filter $timing;
+    width: 100%;
+
+    &.show {
+        filter: opacity(1);
+    }
 }
