@@ -7,8 +7,12 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class MusicianCardComponent {
+    public show: boolean;
+
     @Input()
     public name: String;
 
-    constructor() {}
+    constructor() {
+        this.show = false;
+    }
 }
