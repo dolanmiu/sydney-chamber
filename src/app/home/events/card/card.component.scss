@@ -1,0 +1,10 @@
+@import 'variables';
+
+:host {
+    background-color: $primary-color;
+    color: $text-color-inverse;
+    display: block;
+    height: 100%;
+    padding: 80px;
+    width: 100%;
+}

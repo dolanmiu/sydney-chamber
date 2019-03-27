@@ -1,3 +1,19 @@
 :host {
-    padding: 100px 0;
+    display: block;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    z-index: 10;
+
+    .column {
+        padding: 0;
+    }
+}
+
+app-map {
+    left: 0;
+    position: absolute;
+    top: 0;
 }
