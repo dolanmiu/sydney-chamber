@@ -9,6 +9,7 @@
 .wrapper {
     bottom: 0;
     height: 200px;
+    pointer-events: none;
     position: absolute;
     width: 100%;
 }
