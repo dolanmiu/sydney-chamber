@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DiscographyModule } from '../discography/discography.module';
 import { AboutModule } from './about/about.module';
+import { DiscographyModule } from './discography/discography.module';
 import { EventsModule } from './events/events.module';
 import { HomeComponent } from './home.component';
 import { MusiciansModule } from './musicians/musicians.module';

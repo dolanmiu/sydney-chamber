@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { map, mergeMap, filter, scan } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 import { EventsService } from '../services/events.service';
 

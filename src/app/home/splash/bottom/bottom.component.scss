@@ -1,0 +1,16 @@
+@import 'variables';
+
+$bg-color: rgba($primary-color, .8);
+
+:host {
+    background-color: $bg-color;
+    color: $text-color-inverse;
+    display: block;
+    height: 300px;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
