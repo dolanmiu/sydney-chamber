@@ -10,8 +10,8 @@ interface EventResponse {
 }
 
 interface EventPackage {
-    event: EventBriteEvent,
-    venue: VenueResponse,
+    event: EventBriteEvent;
+    venue: VenueResponse;
 }
 
 interface EventBriteEvent {
