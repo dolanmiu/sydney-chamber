@@ -1,0 +1,51 @@
+@import 'variables';
+
+$shade: rgba($text-color-inverse, .2);
+
+:host {
+    display: flex;
+    flex-direction: row;
+}
+
+.date {
+    border: 2px solid $text-color-inverse;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    margin-right: 24px;
+    min-width: 100px;
+    padding: 10px;
+
+    &:hover {
+        background-color: $shade;
+        cursor: pointer;
+    }
+
+    .day {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .month {
+        text-align: center;
+    }
+
+    .time {
+        text-align: center;
+    }
+}
+
+.date-link {
+    color: $text-color-inverse;
+}
+
+.info {
+    text-align: justify;
+
+    .address {
+        font-weight: bold;
+    }
+}

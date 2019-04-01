@@ -1,4 +1,14 @@
-<div class="">{{ event.event.start.local | date: 'shortTime' }} ACT</div>
-<div class="">
-    {{ event.event.description.text }}
+<a class="date-link" target="_blank" href="{{ event.event.url }}">
+    <div class="date">
+        <div class="day">{{ event.event.start.local | date: 'd' }}</div>
+        <div class="month">{{ event.event.start.local | date: 'MMM' }}</div>
+        <div class="time">{{ event.event.start.local | date: 'shortTime' }}</div>
+    </div>
+</a>
+
+<div class="info">
+    <h2><a></a>{{ event.event.name.text }}</h2>
+    <p class="address"><a target="_blank" href="http://www.google.com/maps/place/{{event.venue.latitude}},{{event.venue.longitude}}">{{ event.venue.address.localized_address_display }}</a></p>
+    <p>{{ event.event.description.text }}</p>
+    <a target="_blank" href="{{ event.event.url }}">More info and how to book on Eventbrite</a>
 </div>

@@ -1,6 +1,6 @@
 <agm-map
-    [latitude]="selectedEvent?.venue.latitude || -33.8798623"
-    [longitude]="selectedEvent?.venue.longitude || 151.2096914"
+    [latitude]="(selectedEvent?.venue.latitude || -33.8798623) - 0.00585"
+    [longitude]="(selectedEvent?.venue.longitude || 151.2096914) - 0.00585"
     [scrollwheel]="false"
     [disableDoubleClickZoom]="false"
     [minZoom]="10"

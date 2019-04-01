@@ -1,6 +1,6 @@
 <app-map [events]="events$ | async" [selectedEvent]="selectedEvent"></app-map>
 <div class="ui grid container">
-    <div class="six wide column">
+    <div class="eight wide column">
         <app-card [events]="events$ | async" (selectedEvent)="selectEvent($event)"></app-card>
     </div>
 </div>
