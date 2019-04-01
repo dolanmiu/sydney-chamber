@@ -1,1 +1,3 @@
 <h1>What's On</h1>
+
+<app-event *ngFor="let event of events" [event]="event" (click)="selectEvent(event)"></app-event>

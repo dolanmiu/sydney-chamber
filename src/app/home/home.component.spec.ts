@@ -5,6 +5,7 @@ import { AboutModule } from './about/about.module';
 import { EventsModule } from './events/events.module';
 import { HomeComponent } from './home.component';
 import { MusiciansModule } from './musicians/musicians.module';
+import { ServicesModule } from './services/services.module';
 import { SplashModule } from './splash/splash.module';
 
 describe('HomeComponent', () => {
@@ -14,7 +15,7 @@ describe('HomeComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [HomeComponent],
-            imports: [EventsModule, MusiciansModule, AboutModule, SplashModule, DiscographyModule],
+            imports: [EventsModule, MusiciansModule, AboutModule, SplashModule, DiscographyModule, ServicesModule],
         }).compileComponents();
     }));
 

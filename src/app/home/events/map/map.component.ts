@@ -7,7 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MapComponent implements OnInit {
     @Input()
-    public event: Event;
+    public events: EventPackage[];
+
+    @Input()
+    public selectedEvent: EventPackage;
 
     constructor() {}
 

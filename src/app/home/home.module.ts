@@ -8,6 +8,7 @@ import { EventsModule } from './events/events.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { MusiciansModule } from './musicians/musicians.module';
+import { ServicesModule } from './services/services.module';
 import { SplashModule } from './splash/splash.module';
 
 @NgModule({
@@ -20,6 +21,7 @@ import { SplashModule } from './splash/splash.module';
         AboutModule,
         SplashModule,
         DiscographyModule,
+        ServicesModule,
     ],
     declarations: [HomeComponent],
 })

@@ -1,7 +1,8 @@
 import { AgmCoreModule } from '@agm/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CardComponent } from './card/card.component';
+import { ServicesModule } from '../services/services.module';
+import { CardModule } from './card/card.module';
 import { EventsComponent } from './events.component';
 import { MapComponent } from './map/map.component';
 import { TimelineModule } from './timeline/timeline.module';
@@ -12,8 +13,8 @@ describe('EventsComponent', () => {
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [EventsComponent, CardComponent, MapComponent],
-            imports: [TimelineModule, AgmCoreModule.forRoot()],
+            declarations: [EventsComponent, MapComponent],
+            imports: [TimelineModule, AgmCoreModule.forRoot(), ServicesModule, CardModule],
         }).compileComponents();
     }));
 

@@ -1,1 +1,13 @@
-<agm-map [latitude]="event?.coordinates?.latitude || 51.509865" [longitude]="event?.coordinates?.longitude || -0.118092" [scrollwheel]="false" [disableDoubleClickZoom]="false" [minZoom]="10" [maxZoom]="17" [zoom]="16" [streetViewControl]="false" [zoomControl]="false"></agm-map>
+<agm-map
+    [latitude]="selectedEvent?.venue.latitude || -33.8798623"
+    [longitude]="selectedEvent?.venue.longitude || 151.2096914"
+    [scrollwheel]="false"
+    [disableDoubleClickZoom]="false"
+    [minZoom]="10"
+    [maxZoom]="17"
+    [zoom]="16"
+    [streetViewControl]="false"
+    [zoomControl]="false"
+>
+    <agm-marker *ngFor="let event of events" [latitude]="event.venue.latitude" [longitude]="event.venue.longitude"></agm-marker>
+</agm-map>
