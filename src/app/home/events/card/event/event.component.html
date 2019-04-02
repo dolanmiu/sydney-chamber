@@ -8,7 +8,7 @@
 
 <div class="info">
     <h2><a></a>{{ event.event.name.text }}</h2>
-    <p class="address"><a target="_blank" href="http://www.google.com/maps/place/{{event.venue.latitude}},{{event.venue.longitude}}">@{{ event.venue.name }} - {{ event.venue.address.localized_address_display }}</a></p>
+    <p class="address"><a target="_blank" href="http://www.google.com/maps/place/{{event.venue.latitude}},{{event.venue.longitude}}"><i class="fas fa-map-marker-alt"></i> {{ event.venue.name }} - {{ event.venue.address.localized_address_display }}</a></p>
     <p class="description">{{ event.event.summary }}</p>
-    <a target="_blank" href="{{ event.event.url }}">More info and how to book on Eventbrite</a>
+    <a target="_blank" href="{{ event.event.url }}"><i class="far fa-link"></i> More info and how to book on Eventbrite</a>
 </div>
