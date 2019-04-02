@@ -43,7 +43,9 @@ $shade: rgba($text-color-inverse, .2);
 }
 
 .info {
-    text-align: justify;
+    .description {
+        text-align: justify;
+    }
 
     .address {
         font-weight: bold;
