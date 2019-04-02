@@ -3,8 +3,7 @@
 $bg-color: rgb(26, 26, 37);
 
 :host {
-    background: $bg-color url('/assets/sydney-skyline.png') repeat-x center bottom;
-    background-size: 600px;
+    background: linear-gradient(rgba(26,26,37,1) 0%, rgba(26,26,37,1) 10%, rgba(26,26,37,0.9) 100%), url('/assets/footer/instrument-bg.png') repeat, $bg-color url('/assets/sydney-skyline.png') repeat-x center bottom;
     color: $text-color-inverse;
     display: block;
     position: relative;
