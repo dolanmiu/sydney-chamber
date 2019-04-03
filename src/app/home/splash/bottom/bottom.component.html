@@ -1,4 +1,4 @@
-<div class="ui grid container">
+<div class="container">
     <div class="sixteen wide column">
         <div class="wrapper">
             <div *ngIf="(event$ | async) as event">
@@ -9,7 +9,7 @@
                 <p>@{{ event.venue.name }}</p>
             </div>
 
-            <div>
+            <div class="listen">
                 <h1>Listen to our music</h1>
             </div>
         </div>

@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'media-queries';
 
 $bg-color: rgba($primary-color, .8);
 
@@ -13,4 +14,10 @@ $bg-color: rgba($primary-color, .8);
 .wrapper {
     display: flex;
     flex-direction: row;
+}
+
+@include respond-below(sm) {
+    .listen {
+        display: none;
+    }
 }

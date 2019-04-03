@@ -1,11 +1,30 @@
 // You can add global styles to this file, and also import other style files
+// sass-lint:disable no-important
 @import url('https://fonts.googleapis.com/css?family=Krub:200|Open+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 @import 'variables';
 
 h1 {
-    // sass-lint:disable no-important
-    font-family: $primary-font-family !important;
-    font-weight: 200 !important;
     line-height: 2em !important;
     min-height: 6rem !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $primary-font-family !important;
+    font-weight: 200 !important;
+}
+
+body {
+    font-family: $secondary-font-family;
+    margin: 0;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
 }

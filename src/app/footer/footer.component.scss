@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'media-queries';
 
 $bg-color: $primary-color;
 $bg-color-gradient-1: rgba($primary-color, 1);
@@ -13,7 +14,8 @@ $bg-color-gradient-2: rgba($primary-color, .9);
 
 .logos {
     display: flex;
-    text-align: right;
+    font-size: 14px;
+    justify-content: flex-end;
 
     span {
         margin-left: 15px;
@@ -68,4 +70,10 @@ $bg-color-gradient-2: rgba($primary-color, .9);
 
 .container {
     padding: 0 0 90px;
+}
+
+@include respond-below(sm) {
+    .logos {
+        font-weight: bold;
+    }
 }
