@@ -58,7 +58,7 @@ $bg-color-gradient-2: rgba($primary-color, .9);
     height: 70px;
     margin-left: 20px;
     padding-top: 20px;
-    transition: background-color .25s, color .25s;
+    transition: background-color $animation-duration, color $animation-duration;
     width: 70px;
 
     &:hover {
@@ -73,7 +73,9 @@ $bg-color-gradient-2: rgba($primary-color, .9);
 }
 
 @include respond-below(sm) {
-    .logos {
-        font-weight: bold;
+    .social-media {
+        border: 0;
+        font-size: 20px;
+        margin: 0;
     }
 }

@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'media-queries';
 
 $shade: rgba($text-color-inverse, .2);
 
@@ -53,5 +54,24 @@ $shade: rgba($text-color-inverse, .2);
 
     h2 {
         margin-top: 0;
+    }
+
+    a {
+        &:hover {
+            filter: brightness(150%);
+        }
+    }
+}
+
+@include respond-between(md, lg) {
+    .date-link {
+        display: none;
+    }
+}
+
+
+@include respond-below(sm) {
+    .date-link {
+        display: none;
     }
 }

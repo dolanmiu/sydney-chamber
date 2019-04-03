@@ -15,7 +15,7 @@
     cursor: pointer;
 
     i {
-        transition: color .25s;
+        transition: color $animation-duration;
     }
 
     &:hover {

@@ -1,12 +1,14 @@
 @import 'variables';
+@import 'media-queries';
+// sass-lint:disable no-important
 
-$bg-color: rgb(47, 45, 51);
+$nav-height: 100px;
 
 :host {
-    background-color: $bg-color;
-    height: 100px;
+    background-color: $text-color;
+    height: $nav-height;
     position: fixed;
-    transition: background-color .25s;
+    transition: background-color $animation-duration;
     width: 100%;
     z-index: 10;
 
@@ -54,7 +56,65 @@ li {
         text-decoration: none;
 
         &:hover {
-            color: $bg-color;
+            color: $text-color;
         }
+    }
+}
+
+.mobile-nav {
+    .panel {
+        background-color: $text-color;
+        display: block;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: $nav-height;
+        transform: translate(300px);
+        transition: transform $animation-duration;
+        width: 300px;
+
+        li {
+            float: initial;
+            margin: 20px 0;
+        }
+
+        &.is-active {
+            transform: translate(0);
+        }
+    }
+}
+
+.hamburger-inner {
+    background-color: $text-color-inverse !important;
+
+    &::before,
+    &::after {
+        background-color: $text-color-inverse !important;
+    }
+}
+
+@include respond-below(sm) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: initial;
+    }
+
+    :host {
+        &.unscrolled {
+            background-color: $text-color;
+        }
+    }
+}
+
+@include respond-above(sm) {
+    .desktop-nav {
+        display: initial;
+    }
+
+    .mobile-nav {
+        display: none;
     }
 }

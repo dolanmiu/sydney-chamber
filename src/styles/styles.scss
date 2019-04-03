@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 @import 'variables';
+@import 'media-queries';
 
 h1 {
     line-height: 2em !important;
@@ -27,4 +28,18 @@ body {
 a {
     color: $link-color;
     text-decoration: none;
+}
+
+@include respond-below(sm) {
+    // h1,
+    // h2,
+    // h3,
+    // h4,
+    // h5 {
+    //     font-size:  2em;
+    // }
+
+    // p {
+    //     font-size: 2rem;
+    // }
 }
