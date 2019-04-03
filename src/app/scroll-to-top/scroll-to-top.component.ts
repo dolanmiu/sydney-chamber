@@ -18,10 +18,10 @@ export class ScrollToTopComponent {
             this.unscrolled = scrollTop < 1000 ? true : false;
 
             const pageHeight = document.documentElement.scrollHeight || document.body.scrollHeight || 0;
-            const windowHeight = document.documentElement.offsetHeight || document.body.offsetHeight;
-            const windowHeightPlusPageHeight = scrollTop + windowHeight;
+            const windowHeight = window.innerHeight;
+            const windowHeightPlusWindowHeight = scrollTop + windowHeight;
 
-            this.inverted = windowHeightPlusPageHeight > pageHeight - 410;
+            this.inverted = windowHeightPlusWindowHeight > pageHeight - 410;
         });
     }
 }

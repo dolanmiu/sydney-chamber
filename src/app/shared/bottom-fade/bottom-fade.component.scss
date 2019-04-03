@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'media-queries';
 
 :host {
     display: block;
@@ -16,4 +17,10 @@
 
 path {
     fill: $primary-color;
+}
+
+@include respond-below(md) {
+    .wrapper {
+        height: 100px;
+    }
 }
