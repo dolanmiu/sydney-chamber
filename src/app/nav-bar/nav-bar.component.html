@@ -2,7 +2,7 @@
     <div class="items">
         <img pageScroll href="#top" class="logo" alt="Logo" src="assets/logos/logo-small.png" />
 
-        <ul>
+        <ul class="desktop-nav">
             <li>
                 <a pageScroll href="#about">About</a>
             </li>
@@ -19,5 +19,38 @@
                 <a pageScroll href="#footer">Contact</a>
             </li>
         </ul>
+
+        <div class="mobile-nav">
+            <button
+                class="hamburger hamburger--collapse"
+                type="button"
+                (click)="navOpened = !navOpened"
+                [ngClass]="{ 'is-active': navOpened }"
+            >
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <div class="panel" [ngClass]="{ 'is-active': navOpened }">
+                <ul>
+                    <li>
+                        <a pageScroll (click)="navOpened = false" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a pageScroll (click)="navOpened = false" href="#discography">Listen</a>
+                    </li>
+                    <li>
+                        <a pageScroll (click)="navOpened = false" href="#musicians">Musicians</a>
+                    </li>
+                    <li>
+                        <a pageScroll (click)="navOpened = false" href="#events">What's On</a>
+                    </li>
+                    <li>
+                        <a pageScroll (click)="navOpened = false" href="#footer">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>

@@ -4,7 +4,7 @@
     bottom: 70px;
     position: fixed;
     right: 70px;
-    transition: opacity .25s;
+    transition: opacity $animation-duration;
 
     &.unscrolled {
         opacity: 0;
@@ -31,7 +31,7 @@
     cursor: pointer;
 
     i {
-        transition: color .25s;
+        transition: color $animation-duration;
     }
 
     &:hover {
@@ -54,6 +54,6 @@
         margin-right: 10px;
         pointer-events: none;
         text-transform: uppercase;
-        transition: margin-right .25s;
+        transition: margin-right $animation-duration;
     }
 }
