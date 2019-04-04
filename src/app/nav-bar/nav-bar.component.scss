@@ -21,6 +21,7 @@ $nav-height: 100px;
     align-items: center;
     display: flex;
     height: 100%;
+    padding-bottom: 16px;
     width: 100%;
 
     .logo {
@@ -51,7 +52,7 @@ li {
     a {
         color: $text-color-inverse;
         display: block;
-        padding: 14px 16px;
+        padding: 14px 20px;
         text-align: center;
         text-decoration: none;
 

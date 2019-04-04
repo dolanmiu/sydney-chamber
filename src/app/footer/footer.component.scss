@@ -31,12 +31,9 @@ $bg-color-gradient-2: rgba($primary-color, .9);
     font-size: 2rem;
     line-height: 1.5em;
 
-    span {
-        font-size: 1.5rem;
-    }
-
     .messenger {
         color: inherit;
+        font-size: 1.5rem;
 
         &:hover {
             text-decoration: underline;
@@ -77,5 +74,17 @@ $bg-color-gradient-2: rgba($primary-color, .9);
         border: 0;
         font-size: 20px;
         margin: 0;
+    }
+
+    .email {
+        font-size: 1rem;
+
+        .messenger {
+            font-size: 1rem;
+        }
+    }
+
+    h1 {
+        font-size: 1.2em;
     }
 }
