@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'media-queries';
 
 :host {
     bottom: 70px;
@@ -55,5 +56,11 @@
         pointer-events: none;
         text-transform: uppercase;
         transition: margin-right $animation-duration;
+    }
+}
+
+@include respond-below(sm) {
+    :host {
+        display: none;
     }
 }
