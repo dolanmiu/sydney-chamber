@@ -8,39 +8,39 @@ $shade: rgba($text-color-inverse, .2);
     flex-direction: row;
 }
 
-.date {
-    border: 2px solid $text-color-inverse;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    height: 100px;
-    justify-content: center;
-    margin-right: 24px;
-    min-width: 100px;
-    padding: 10px;
-
-    &:hover {
-        background-color: $shade;
-        cursor: pointer;
-    }
-
-    .day {
-        font-size: 2.5em;
-        margin-bottom: -3px;
-        text-align: center;
-    }
-
-    .month {
-        text-align: center;
-    }
-
-    .time {
-        text-align: center;
-    }
-}
-
 .date-link {
     color: $text-color-inverse;
+
+    .date {
+        border: 2px solid $text-color-inverse;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        justify-content: center;
+        margin-right: 24px;
+        min-width: 100px;
+        padding: 10px;
+
+        &:hover {
+            background-color: $shade;
+            cursor: pointer;
+        }
+
+        .day {
+            font-size: 2.5em;
+            margin-bottom: -3px;
+            text-align: center;
+        }
+
+        .month {
+            text-align: center;
+        }
+
+        .time {
+            text-align: center;
+        }
+    }
 }
 
 .info {
@@ -61,17 +61,32 @@ $shade: rgba($text-color-inverse, .2);
             filter: brightness(150%);
         }
     }
+
+    .date {
+        display: none;
+    }
 }
 
 @include respond-between(md, lg) {
     .date-link {
         display: none;
     }
-}
 
+    .info {
+        .date {
+            display: initial;
+        }
+    }
+}
 
 @include respond-below(sm) {
     .date-link {
         display: none;
+    }
+
+    .info {
+        .date {
+            display: initial;
+        }
     }
 }
