@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'media-queries';
 
 :host {
     background-color: $primary-color;
@@ -11,4 +12,8 @@
 
 app-event {
     margin-bottom: 24px;
+}
+
+@include respond-below(sm) {
+    padding: 0;
 }
