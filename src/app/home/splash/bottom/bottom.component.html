@@ -4,9 +4,9 @@
             <div *ngIf="(event$ | async) as event">
                 <h1>Next Event</h1>
 
-                <p>{{ event.event.start.local | date }} {{ event.event.start.local | date: 'shortTime' }}</p>
-                <p>{{ event.event.name.text }}</p>
-                <p>@{{ event.venue.name }}</p>
+                <p><span class="date">{{ event.event.start.local | date }}</span> <span class="time">{{ event.event.start.local | date: 'shortTime' }}</span></p>
+                <p><span class="name">{{ event.event.name.text }}</span></p>
+                <p><a class="location" target="_blank" href="http://www.google.com/maps/place/{{event.venue.latitude}},{{event.venue.longitude}}">@{{ event.venue.name }}</a></p>
             </div>
 
             <div class="listen">

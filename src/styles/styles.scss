@@ -1,14 +1,13 @@
 // You can add global styles to this file, and also import other style files
 // sass-lint:disable no-important
-@import url('https://fonts.googleapis.com/css?family=Krub:200|Open+Sans:300');
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Lato:400,900|Oswald');
 
 @import 'variables';
 @import 'media-queries';
 
 h1 {
     line-height: 2em !important;
-    min-height: 6rem !important;
+    min-height: 6rem;
 }
 
 h1,

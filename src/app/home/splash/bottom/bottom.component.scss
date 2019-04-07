@@ -1,7 +1,11 @@
 @import 'variables';
 @import 'media-queries';
 
-$bg-color: rgba($primary-color, .8);
+$bg-color: rgba($primary-color, .3);
+
+$black: #000;
+$white: #fff;
+$date-padding: 6px;
 
 :host {
     background-color: $bg-color;
@@ -9,11 +13,53 @@ $bg-color: rgba($primary-color, .8);
     display: block;
     height: 300px;
     width: 100%;
+    z-index: 2;
+}
+
+h1 {
+    min-height: initial;
 }
 
 .wrapper {
     display: flex;
     flex-direction: row;
+
+    .listen {
+        margin-left: 30px;
+    }
+
+    .date {
+        background-color: $black;
+        color: $white;
+        font-weight: 900;
+        padding: $date-padding;
+    }
+
+    .time {
+        background-color: $white;
+        color: $black;
+        font-weight: 900;
+        padding: $date-padding;
+    }
+
+    p {
+        font-size: 1.1em;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .name {
+        background-color: $black;
+        font-weight: 900;
+        padding: $date-padding;
+    }
+
+    .location {
+        background-color: $white;
+        color: $black;
+        font-weight: 900;
+        padding: $date-padding;
+    }
 }
 
 @include respond-below(sm) {
