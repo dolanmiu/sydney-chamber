@@ -74,6 +74,11 @@ $bg-color-gradient-2: rgba($primary-color, .9);
         border: 0;
         font-size: 20px;
         margin: 0;
+
+        &:hover {
+            background-color: initial;
+            color: $text-color-inverse;
+        }
     }
 
     .email {

@@ -2,6 +2,7 @@
 @import 'media-queries';
 
 $bg-color: rgba($primary-color, .3);
+$text-color: darken($text-color-inverse, 20%);
 
 $black: #000;
 $white: #fff;
@@ -11,7 +12,6 @@ $date-padding: 6px;
     background-color: $bg-color;
     color: $text-color-inverse;
     display: block;
-    height: 300px;
     width: 100%;
     z-index: 2;
 }
@@ -21,11 +21,17 @@ h1 {
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: row;
-
     .listen {
-        margin-left: 30px;
+    }
+
+    .event {
+        text-transform: uppercase;
+    }
+
+    .about {
+        p {
+            color: $text-color;
+        }
     }
 
     .date {
@@ -45,13 +51,13 @@ h1 {
     p {
         font-size: 1.1em;
         font-weight: 500;
-        text-transform: uppercase;
     }
 
     .name {
         background-color: $black;
         color: $white;
         font-weight: 900;
+        line-height: 33px;
         padding: $date-padding;
     }
 

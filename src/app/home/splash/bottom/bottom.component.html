@@ -1,16 +1,46 @@
 <div class="container">
-    <div class="sixteen wide column">
-        <div class="wrapper">
-            <div *ngIf="(event$ | async) as event">
+    <div class="row wrapper">
+        <div class="col-lg-4">
+            <div class="event" *ngIf="(event$ | async) as event">
                 <h1>Next Event</h1>
 
-                <p><a href="{{ event.event.url }}" target="_blank"><span class="date">{{ event.event.start.local | date }}</span> <span class="time">{{ event.event.start.local | date: 'shortTime' }}</span></a></p>
-                <p><a href="{{ event.event.url }}" target="_blank"><span class="name">{{ event.event.name.text }}</span></a></p>
-                <p><a class="location" target="_blank" href="http://www.google.com/maps/place/{{event.venue.latitude}},{{event.venue.longitude}}">@{{ event.venue.name }}</a></p>
+                <p>
+                    <a href="{{ event.event.url }}" target="_blank"
+                        ><span class="date">{{ event.event.start.local | date }}</span>
+                        <span class="time">{{ event.event.start.local | date: 'shortTime' }}</span></a
+                    >
+                </p>
+                <p>
+                    <a href="{{ event.event.url }}" target="_blank"
+                        ><span class="name">{{ event.event.name.text }}</span></a
+                    >
+                </p>
+                <p>
+                    <a
+                        class="location"
+                        target="_blank"
+                        href="http://www.google.com/maps/place/{{ event.venue.latitude }},{{ event.venue.longitude }}"
+                        >@{{ event.venue.name }}</a
+                    >
+                </p>
             </div>
+        </div>
 
+        <div class="col-lg-4">
             <div class="listen">
                 <h1>Listen to our music</h1>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="about">
+                <h1>About</h1>
+
+                <p>
+                    Eat. Drink. Listen. Merging classical music with urban life, The Chamber Project brings extraordinary musical
+                    experiences to a unique, familiar setting. Together with Soultrap, we aim to give you the best way to experience this
+                    music—close up, well nourished, in comfort.
+                </p>
             </div>
         </div>
     </div>
