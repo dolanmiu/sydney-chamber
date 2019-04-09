@@ -12,6 +12,7 @@ $date-padding: 6px;
     background-color: $bg-color;
     color: $text-color-inverse;
     display: block;
+    padding-bottom: 30px;
     width: 100%;
     z-index: 2;
 }
@@ -21,11 +22,10 @@ h1 {
 }
 
 .wrapper {
-    .listen {
-    }
-
     .event {
-        text-transform: uppercase;
+        p {
+            text-transform: uppercase;
+        }
     }
 
     .about {
