@@ -31,6 +31,10 @@ $nav-height: 100px;
         &:hover {
             cursor: pointer;
         }
+
+        &.mobile {
+            height: 15px;
+        }
     }
 }
 
@@ -108,6 +112,12 @@ li {
             background-color: $text-color;
         }
     }
+
+    .logo {
+        &.desktop {
+            display: none;
+        }
+    }
 }
 
 @include respond-above(sm) {
@@ -117,5 +127,11 @@ li {
 
     .mobile-nav {
         display: none;
+    }
+
+    .logo {
+        &.mobile {
+            display: none;
+        }
     }
 }

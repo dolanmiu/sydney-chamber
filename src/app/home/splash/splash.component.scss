@@ -61,8 +61,14 @@ app-hero-image {
     width: 100%;
 }
 
-@include respond-below(sm) {
+@include respond-below(md) {
     .logo {
         width: 80%;
+    }
+}
+
+@include respond-below(sm) {
+    .logo {
+        display: none;
     }
 }
