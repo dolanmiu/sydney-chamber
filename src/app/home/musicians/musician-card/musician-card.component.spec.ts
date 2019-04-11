@@ -16,6 +16,10 @@ describe('MusicianCardComponent', () => {
         fixture = TestBed.createComponent(MusicianCardComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
+        component.musician = {
+            name: 'test',
+            image: 'test.jpg',
+        };
     });
 
     it('should create', () => {

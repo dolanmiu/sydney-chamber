@@ -11,7 +11,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3" *ngFor="let musician of musicians">
-            <app-musician-card [name]="musician.name"></app-musician-card>
+            <app-musician-card [musician]="musician"></app-musician-card>
         </div>
     </div>
 </div>

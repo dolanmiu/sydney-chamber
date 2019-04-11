@@ -10,7 +10,7 @@ export class MusicianCardComponent {
     public show: boolean;
 
     @Input()
-    public name: String;
+    public musician: Musician;
 
     constructor() {
         this.show = false;
