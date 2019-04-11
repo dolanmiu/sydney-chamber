@@ -1,8 +1,8 @@
 <div class="wrapper" (mouseenter)="show = true" (mouseleave)="show = false">
     <div class="fill">
-        <img src="/assets/musicians/{{ musician.image }}" />
+        <img src="/assets/musicians/{{ musician.image }}" [ngClass]="{ show: show }" />
     </div>
-    <div class="details">
+    <div class="details" [ngClass]="{ show: show }">
         <p class="name">{{ musician.name }}</p>
 
         <p class="description">Testing</p>
