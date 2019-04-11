@@ -1,5 +1,7 @@
 <div class="wrapper" (mouseenter)="show = true" (mouseleave)="show = false">
-    <img src="/assets/musicians/evan.jpg" [ngClass]="{ show: show }" />
+    <div class="fill">
+        <img src="/assets/musicians/evan.jpg" [ngClass]="{ show: show }" />
+    </div>
     <div class="details" [ngClass]="{ show: show }">
         <p class="name">{{ name }}</p>
 

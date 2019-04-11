@@ -32,6 +32,12 @@ h1 {
         p {
             color: $text-color;
         }
+
+        .slogan {
+            color: $white;
+            font-family: $ternary-font-family;
+            font-size: 1.4em;
+        }
     }
 
     .date {

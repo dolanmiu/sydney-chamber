@@ -8,16 +8,19 @@ import { Component, OnInit } from '@angular/core';
 export class MusiciansComponent implements OnInit {
     public musicians = [
         {
-            name: 'Evan',
+            name: 'Evan Streater',
         },
         {
-            name: 'Evan',
+            name: 'Glenn Christensen',
         },
         {
-            name: 'Evan',
+            name: 'Caroline Hopson',
         },
         {
-            name: 'Evan',
+            name: 'Nathan Greentree',
+        },
+        {
+            name: 'Heather Lindsay',
         },
     ];
     constructor() {}
