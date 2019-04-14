@@ -12,3 +12,19 @@
 .masonry-item {
     width: 25%;
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+app-musician-card {
+    height: 300px;
+    width: 300px;
+    transition: width $animation-duration;
+
+    &:hover {
+        width: 400px;
+    }
+}
