@@ -20,13 +20,22 @@ $nav-height: 100px;
 .items {
     align-items: center;
     display: flex;
+    justify-content: space-between;
     height: 100%;
     padding-bottom: 16px;
     width: 100%;
 
+    .logo-block {
+        align-items: center;
+        display: flex;
+    }
+
+    .desktop {
+        margin-right: 20px !important;
+    }
+
     .logo {
         height: 50px;
-        margin-right: auto;
 
         &:hover {
             cursor: pointer;
@@ -127,11 +136,5 @@ li {
 
     .mobile-nav {
         display: none;
-    }
-
-    .logo {
-        &.mobile {
-            display: none;
-        }
     }
 }

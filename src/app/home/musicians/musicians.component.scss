@@ -12,3 +12,23 @@
 .masonry-item {
     width: 25%;
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+app-musician-card {
+    width: 300px;
+    transition: width $animation-duration;
+
+    &:hover {
+        width: 400px;
+    }
+}
+
+.email {
+    font-size: 1.2em;
+    color: $text-color-inverse;
+}

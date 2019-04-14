@@ -9,9 +9,11 @@
 </ngx-masonry> -->
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-3" *ngFor="let musician of musicians">
-            <app-musician-card [musician]="musician"></app-musician-card>
-        </div>
+    <div class="flex-container">
+        <app-musician-card [musician]="musician" *ngFor="let musician of musicians"></app-musician-card>
     </div>
+</div>
+
+<div class="container">
+    <a class="email" href="mailto:evan@thechamberproject.com.au">Want to join us? Email evan@thechamberproject.com.au <i class="far fa-drum"></i></a>
 </div>
