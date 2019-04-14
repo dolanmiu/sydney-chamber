@@ -5,7 +5,7 @@
 $nav-height: 100px;
 
 :host {
-    background-color: $text-color;
+    background-color: $primary-color;
     height: $nav-height;
     position: fixed;
     transition: background-color $animation-duration;
@@ -68,7 +68,7 @@ li {
 
 .mobile-nav {
     .panel {
-        background-color: $text-color;
+        background-color: $primary-color;
         display: block;
         height: 100vh;
         position: fixed;
@@ -109,7 +109,7 @@ li {
 
     :host {
         &.unscrolled {
-            background-color: $text-color;
+            background-color: $primary-color;
         }
     }
 
