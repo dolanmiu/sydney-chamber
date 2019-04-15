@@ -10,22 +10,27 @@ export class MusiciansComponent implements OnInit {
         {
             name: 'Evan Streater',
             image: 'evan-streater.jpg',
+            instrument: 'Piano',
         },
         {
             name: 'Glenn Christensen',
             image: 'glenn-christensen.jpg',
+            instrument: 'Violin',
         },
         {
             name: 'Caroline Hopson',
             image: 'caroline-hopson.jpg',
+            instrument: 'Violin',
         },
         {
             name: 'Nathan Greentree',
             image: 'nathan-greentree.jpg',
+            instrument: 'Viola',
         },
         {
             name: 'Heather Lindsay',
             image: 'heather-lindsay.jpg',
+            instrument: 'Cello',
         },
     ];
     constructor() {}

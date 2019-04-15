@@ -18,9 +18,9 @@ describe('MusicianCardComponent', () => {
         component.musician = {
             name: 'test',
             image: 'test.jpg',
+            instrument: 'test-instrument',
         };
         fixture.detectChanges();
-
     });
 
     it('should create', () => {

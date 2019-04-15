@@ -1,1 +1,6 @@
+@import 'variables';
 
+:host {
+    background-color: $text-color-inverse;
+    display: block;
+}

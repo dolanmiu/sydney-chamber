@@ -40,7 +40,14 @@ $bg-color-gradient-2: rgba($primary-color, .9);
             text-decoration-style: dashed;
         }
     }
+
+    .join {
+        color: inherit;
+        font-size: 1rem;
+    }
 }
+
+
 
 .skyline {
     bottom: 0;

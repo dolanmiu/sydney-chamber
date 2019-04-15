@@ -3,6 +3,7 @@
 // sass-lint:disable no-important
 
 $nav-height: 100px;
+$hover-color: rgba($text-color-inverse, .6);
 
 :host {
     background-color: $primary-color;
@@ -11,14 +12,6 @@ $nav-height: 100px;
     transition: background-color $animation-duration;
     width: 100%;
     z-index: 10;
-
-    &.unscrolled {
-        background-color: transparent;
-
-        .logo {
-            filter: brightness(0%);
-        }
-    }
 }
 
 .items {
@@ -66,8 +59,10 @@ ul {
 
 li {
     float: left;
+    font-weight: 600;
 
     a {
+        box-sizing: border-box;
         color: $text-color-inverse;
         display: block;
         padding: 14px 20px;
@@ -75,7 +70,7 @@ li {
         text-decoration: none;
 
         &:hover {
-            color: $text-color;
+            color: $hover-color;
         }
     }
 }
@@ -141,5 +136,24 @@ li {
 
     .mobile-nav {
         display: none;
+    }
+
+    :host {
+        &.unscrolled {
+            background-color: transparent;
+
+            .logo {
+                filter: brightness(0%);
+            }
+
+            .desktop-nav {
+                li {
+                    // sass-lint:disable nesting-depth
+                    a {
+                        color: $primary-color !important;
+                    }
+                }
+            }
+        }
     }
 }

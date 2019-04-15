@@ -27,14 +27,14 @@ $timing: .2s;
         transition: transform $timing, filter $timing;
 
         &.show {
-            filter: brightness(20%);
+            filter: brightness(20%) grayscale(1);
             transform: scale(1.03) translateX(-50%) translateY(-50%);
         }
     }
 }
 
 .wrapper {
-    height: 500px;
+    height: 700px;
     overflow: hidden;
     width: 100%;
 }
@@ -56,6 +56,11 @@ $timing: .2s;
 
     &.show {
         filter: opacity(1);
+    }
+
+    .instrument {
+        font-size: 1.2em;
+        font-weight: 600;
     }
 }
 

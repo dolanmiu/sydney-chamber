@@ -1,11 +1,11 @@
 @import 'variables';
 
+$bg-color-gradient-1: rgba($text-color-inverse, .95);
+
 :host {
-    background-color: $primary-color;
-    color: $text-color-inverse;
+    background: linear-gradient($bg-color-gradient-1 0%, $bg-color-gradient-1 100%), $text-color-inverse url('/assets/footer/instrument-bg.png') fixed center repeat;
+    color: $text-color;
     display: block;
-    padding-bottom: 100px;
-    padding-top: 100px;
     width: 100%;
 }
 
@@ -16,19 +16,13 @@
 .flex-container {
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
 }
 
 app-musician-card {
-    width: 300px;
     transition: width $animation-duration;
+    width: 300px;
 
     &:hover {
         width: 400px;
     }
-}
-
-.email {
-    font-size: 1.2em;
-    color: $text-color-inverse;
 }
