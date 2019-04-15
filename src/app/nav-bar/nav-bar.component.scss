@@ -14,14 +14,18 @@ $nav-height: 100px;
 
     &.unscrolled {
         background-color: transparent;
+
+        .logo {
+            filter: brightness(0%);
+        }
     }
 }
 
 .items {
     align-items: center;
     display: flex;
-    justify-content: space-between;
     height: 100%;
+    justify-content: space-between;
     padding-bottom: 16px;
     width: 100%;
 
@@ -36,6 +40,7 @@ $nav-height: 100px;
 
     .logo {
         height: 50px;
+        transition: filter $animation-duration;
 
         &:hover {
             cursor: pointer;
