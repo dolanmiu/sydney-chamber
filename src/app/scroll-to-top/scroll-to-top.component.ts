@@ -12,7 +12,7 @@ export class ScrollToTopComponent {
     @HostBinding('class.inverted')
     public inverted = true;
 
-    constructor(renderer: Renderer2) {
+    constructor(readonly renderer: Renderer2) {
         renderer.listen('window', 'scroll', () => {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
             this.unscrolled = scrollTop < 1000 ? true : false;

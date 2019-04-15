@@ -12,7 +12,7 @@ import { EventsService } from '../../services/events.service';
 export class BottomComponent implements OnInit {
     public readonly event$: Observable<EventPackage>;
 
-    constructor(eventsService: EventsService) {
+    constructor(readonly eventsService: EventsService) {
         this.event$ = eventsService.Events.pipe(
             map((events) => {
                 const [one] = events;

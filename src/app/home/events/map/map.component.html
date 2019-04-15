@@ -8,6 +8,7 @@
     [zoom]="16"
     [streetViewControl]="false"
     [zoomControl]="false"
+    [style.height.px]="height"
 >
     <agm-marker *ngFor="let event of events" [latitude]="event.venue.latitude" [longitude]="event.venue.longitude"></agm-marker>
 </agm-map>

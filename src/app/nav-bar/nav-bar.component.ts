@@ -11,7 +11,7 @@ export class NavBarComponent {
 
     public navOpened = false;
 
-    constructor(renderer: Renderer2) {
+    constructor(readonly renderer: Renderer2) {
         renderer.listen('window', 'scroll', () => {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
             this.unscrolled = scrollTop < 60 ? true : false;

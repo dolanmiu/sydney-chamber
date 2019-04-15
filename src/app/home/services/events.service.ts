@@ -7,7 +7,7 @@ import { map, share } from 'rxjs/operators';
 export class EventsService {
     private readonly events: Observable<EventPackage[]>;
 
-    constructor(httpClient: HttpClient) {
+    constructor(readonly httpClient: HttpClient) {
         this.events = httpClient
             .get<EventResponse>(`https://wt-9017166451e5dc00461b648d19f5e8da-0.sandbox.auth0-extend.com/sydney-chamber-webtasks`)
             .pipe(
