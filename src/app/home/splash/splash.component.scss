@@ -1,6 +1,8 @@
 @import 'variables';
 @import 'media-queries';
 
+$logo-bg-color: rgba($primary-color, .5);
+
 :host {
     display: block;
     height: 100vh;
@@ -47,6 +49,7 @@
 }
 
 app-hero-image {
+    bottom: 0;
     position: fixed;
     z-index: -1;
 }
@@ -62,7 +65,8 @@ app-hero-image {
 }
 
 .logo {
-    filter: brightness(0);
+    background-color: $logo-bg-color;
+    padding: 5px;
 }
 
 @include respond-below(md) {
