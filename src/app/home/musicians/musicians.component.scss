@@ -6,6 +6,7 @@ $bg-color-gradient-1: rgba($text-color-inverse, .95);
     background: linear-gradient($bg-color-gradient-1 0%, $bg-color-gradient-1 100%), $text-color-inverse url('/assets/footer/instrument-bg.png') fixed center repeat;
     color: $text-color;
     display: block;
+    filter: grayscale(1);
     width: 100%;
 }
 
