@@ -40,8 +40,8 @@ export class MusiciansComponent implements OnInit {
         {
             name: 'Vatche Jambazian',
             image: 'vatche-jambazian.jpg',
-            instrument: 'Piano'
-        }
+            instrument: 'Piano',
+        },
     ];
     constructor() {}
 
