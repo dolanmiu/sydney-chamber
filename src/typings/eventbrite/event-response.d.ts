@@ -40,7 +40,7 @@ interface EventBriteEvent {
     changed: string;
     capacity: number;
     capacity_is_custom: boolean;
-    status: string;
+    status: 'live' | 'draft';
     currency: string;
     listed: boolean;
     shareable: boolean;
