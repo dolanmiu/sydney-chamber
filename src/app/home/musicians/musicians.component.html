@@ -5,7 +5,9 @@
 </ngx-masonry> -->
 
 <div class="container">
-    <div class="flex-container">
-        <app-musician-card [musician]="musician" *ngFor="let musician of musicians"></app-musician-card>
+    <div class="row">
+        <div class="col-6 col-md-3" *ngFor="let musician of musicians">
+            <app-musician-card [musician]="musician"></app-musician-card>
+        </div>
     </div>
 </div>
