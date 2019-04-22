@@ -10,6 +10,11 @@ export class MapComponent implements OnInit {
     @Input()
     public events: EventPackage[];
 
+    public iconOptions = {
+        url: '/assets/map-marker.svg',
+        scaledSize: { height: 76, width: 50 },
+    };
+
     @Input()
     public selectedEvent: EventPackage;
 
