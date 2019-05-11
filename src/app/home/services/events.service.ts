@@ -12,6 +12,7 @@ export class EventsService {
             .get<EventResponse>(`https://wt-9017166451e5dc00461b648d19f5e8da-0.sandbox.auth0-extend.com/sydney-chamber-webtasks`)
             .pipe(
                 map((res) => res.events),
+                map((events) => events.filter((e) => e.event.status === 'live')),
                 share(),
             );
     }
