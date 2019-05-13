@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
-import { empty } from 'rxjs';
+import { EMPTY } from 'rxjs';
 
 import { EventsService } from './events.service';
 
@@ -11,7 +11,7 @@ describe('EventsService', () => {
                 {
                     provide: HttpClient,
                     useValue: {
-                        get: () => empty(),
+                        get: () => EMPTY,
                     },
                 },
                 EventsService,
