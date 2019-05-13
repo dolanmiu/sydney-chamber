@@ -18,6 +18,7 @@ before_install:
 - npm config set "@fortawesome:registry" https://npm.fontawesome.com/$FORT_AWESOME_TOKEN
 before_script:
 - npm install
+- npm rebuild node-sass --force
 - npm i -g angular-cli-ghpages
 script:
 - npm run lint
