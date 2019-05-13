@@ -1,9 +1,8 @@
 <div class="container">
     <div class="row wrapper">
         <div class="col-lg-4">
-            <div class="event" *ngIf="(event$ | async) as event">
-                <h1>Next Event</h1>
-
+            <h1>Next Event</h1>
+            <ng-container class="event" *ngIf="event$ | async as event; else noEvent">
                 <p>
                     <a href="{{ event.event.url }}" target="_blank"
                         ><span class="date">{{ event.event.start.local | date }}</span>
@@ -23,7 +22,10 @@
                         >@{{ event.venue.name }}</a
                     >
                 </p>
-            </div>
+            </ng-container>
+            <ng-container #noEvent>
+                <p>No upcoming events</p>
+            </ng-container>
         </div>
 
         <div class="col-lg-4">
@@ -39,9 +41,9 @@
                 <h1>About</h1>
 
                 <p>
-                    <span class="slogan">Eat. Drink. Listen.</span> Merging classical music with urban life, The Chamber Project brings extraordinary musical
-                    experiences to a unique, familiar setting. Together with Soultrap, we aim to give you the best way to experience this
-                    music—close up, well nourished, in comfort.
+                    <span class="slogan">Eat. Drink. Listen.</span> Merging classical music with urban life, The Chamber Project brings
+                    extraordinary musical experiences to a unique, familiar setting. Together with Soultrap, we aim to give you the best way
+                    to experience this music—close up, well nourished, in comfort.
                 </p>
             </div>
         </div>

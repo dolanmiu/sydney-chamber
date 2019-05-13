@@ -16,7 +16,6 @@ export class EventsComponent implements DoCheck {
 
     constructor(readonly eventsService: EventsService, private readonly el: ElementRef) {
         this.events$ = eventsService.Events.pipe(
-            map((events) => events.filter((e) => e.event.status === 'live')),
             map((events) => {
                 const [one, two, three] = events;
 
