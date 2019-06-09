@@ -1,0 +1,3 @@
+<div *ngIf="photos$ | async; let photos" style="width: 100%">
+    <app-photo *ngFor="let photo of photos" [photo]="photo" class="photo"></app-photo>
+</div>

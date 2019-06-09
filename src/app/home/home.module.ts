@@ -7,6 +7,7 @@ import { DiscographyModule } from './discography/discography.module';
 import { EventsModule } from './events/events.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
+import { InstagramModule } from './instagram/instagram.module';
 import { MusiciansModule } from './musicians/musicians.module';
 import { ServicesModule } from './services/services.module';
 import { SplashModule } from './splash/splash.module';
@@ -22,6 +23,7 @@ import { SplashModule } from './splash/splash.module';
         SplashModule,
         DiscographyModule,
         ServicesModule,
+        InstagramModule,
     ],
     declarations: [HomeComponent],
 })
