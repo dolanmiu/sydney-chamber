@@ -7,7 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class EventComponent {
     @Input()
-    public event: EventPackage;
-
-    constructor() {}
+    public event: { key: string; value: EventPackage[] };
 }

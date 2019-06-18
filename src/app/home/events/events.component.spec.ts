@@ -1,7 +1,8 @@
 import { AgmCoreModule } from '@agm/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { of } from 'rxjs';
 
-import { ServicesModule } from '../services/services.module';
+import { EventsService } from '../services/events.service';
 import { CardModule } from './card/card.module';
 import { EventsComponent } from './events.component';
 import { MapComponent } from './map/map.component';
@@ -14,7 +15,31 @@ describe('EventsComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [EventsComponent, MapComponent],
-            imports: [TimelineModule, AgmCoreModule.forRoot(), ServicesModule, CardModule],
+            imports: [TimelineModule, AgmCoreModule.forRoot(), CardModule],
+            providers: [
+                {
+                    provide: EventsService,
+                    useValue: {
+                        Events: of([
+                            {
+                                event: {
+                                    name: {
+                                        text: 'test',
+                                    },
+                                    start: {
+                                        local: '01/01/2000',
+                                    },
+                                },
+                                venue: {
+                                    address: {
+                                        localized_address_display: '',
+                                    },
+                                },
+                            } as EventPackage,
+                        ]),
+                    },
+                },
+            ],
         }).compileComponents();
     }));
 

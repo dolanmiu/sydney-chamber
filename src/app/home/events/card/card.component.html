@@ -1,6 +1,6 @@
 <h1>What's On</h1>
 
-<app-event *ngFor="let event of events" [event]="event" (click)="selectEvent(event)"></app-event>
+<app-event *ngFor="let event of events | keyvalue" [event]="event" (click)="selectEvent(event.value[0])"></app-event>
 
 <div *ngIf="events?.length === 0">
     <p>No events currently scheduled!</p>

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-map',
@@ -6,9 +6,9 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
     styleUrls: ['./map.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MapComponent implements OnInit {
+export class MapComponent {
     @Input()
-    public events: EventPackage[];
+    public events: { key: string; value: EventPackage[] };
 
     public iconOptions = {
         url: '/assets/map-marker.svg',
@@ -20,8 +20,4 @@ export class MapComponent implements OnInit {
 
     @Input()
     public height: number;
-
-    constructor() {}
-
-    public ngOnInit(): void {}
 }

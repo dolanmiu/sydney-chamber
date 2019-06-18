@@ -1,6 +1,6 @@
 import { Component, DoCheck, ElementRef } from '@angular/core';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map, tap } from 'rxjs/operators';
 
 import { EventsService } from '../services/events.service';
 
@@ -10,18 +10,26 @@ import { EventsService } from '../services/events.service';
     styleUrls: ['./events.component.scss'],
 })
 export class EventsComponent implements DoCheck {
-    public readonly events$: Observable<EventPackage[]>;
+    public readonly events$: Observable<{ [key: number]: EventPackage[] }>;
     public selectedEvent: EventPackage;
     public height: number;
 
     constructor(readonly eventsService: EventsService, private readonly el: ElementRef) {
         this.events$ = eventsService.Events.pipe(
-            map((events) => {
-                const [one, two, three] = events;
-
-                return [one, two, three];
-            }),
             map((x) => x.filter((y) => !!y)),
+            map((events) => {
+                return events.reduce<{ [key: string]: EventPackage[] }>((acc, curr) => {
+                    const name = curr.event.name.text;
+
+                    return {
+                        ...acc,
+                        [name]: acc[name] ? [...acc[name], curr] : [curr],
+                    };
+                }, {});
+            }),
+            map((x) => Object.values(x)),
+            map((x) => x.sort((a, b) => new Date(a[0].event.start.local).getTime() - new Date(b[0].event.start.local).getTime())),
+            map((obj) => ({ ...obj })),
         );
     }
 

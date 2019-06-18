@@ -10,5 +10,11 @@
     [zoomControl]="false"
     [style.height.px]="height"
 >
-    <agm-marker *ngFor="let event of events" [latitude]="event.venue.latitude" [longitude]="event.venue.longitude" [iconUrl]="iconOptions"></agm-marker>
+    <div *ngFor="let pair of events | keyvalue">
+        <agm-marker *ngIf="pair.value[0].venue"
+            [latitude]="pair.value[0].venue.latitude"
+            [longitude]="pair.value[0].venue.longitude"
+            [iconUrl]="iconOptions"
+        ></agm-marker>
+    </div>
 </agm-map>
