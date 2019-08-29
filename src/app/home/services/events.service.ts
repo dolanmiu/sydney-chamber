@@ -17,7 +17,7 @@ export class EventsService {
                     {
                         event: {
                             name: {
-                                text: 'Close Quarters @ The Chamber Project',
+                                text: 'ASQ ‘Close Quarters’ @ Soultrap',
                                 html: 'string',
                             },
                             start: {
