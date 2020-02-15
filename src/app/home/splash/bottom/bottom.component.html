@@ -2,24 +2,24 @@
     <div class="row wrapper">
         <div class="col-lg-4">
             <h1>Next Event</h1>
-            <ng-container class="event" *ngIf="event$ | async as event; else noEvent">
-                <p>
+            <ng-container class="event" *ngIf="event$ | async as events; else noEvent">
+                <p class="event-date" *ngFor="let event of events">
                     <a href="{{ event.event.url }}" target="_blank"
                         ><span class="date">{{ event.event.start.local | date }}</span>
                         <span class="time">{{ event.event.start.local | date: 'shortTime' }}</span></a
                     >
                 </p>
                 <p>
-                    <a href="{{ event.event.url }}" target="_blank"
-                        ><span class="name">{{ event.event.name.text }}</span></a
+                    <a href="{{ events[0].event.url }}" target="_blank"
+                        ><span class="name">{{ events[0].event.name.text }}</span></a
                     >
                 </p>
                 <p>
                     <a
                         class="location"
                         target="_blank"
-                        href="http://www.google.com/maps/place/{{ event.venue.latitude }},{{ event.venue.longitude }}"
-                        >@{{ event.venue.name }}</a
+                        href="http://www.google.com/maps/place/{{ events[0].venue.latitude }},{{ events[0].venue.longitude }}"
+                        >@{{ events[0].venue.name }}</a
                     >
                 </p>
             </ng-container>

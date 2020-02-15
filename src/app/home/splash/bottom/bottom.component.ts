@@ -10,10 +10,22 @@ import { EventsService } from '../../services/events.service';
     styleUrls: ['./bottom.component.scss'],
 })
 export class BottomComponent implements OnInit {
-    public readonly event$: Observable<EventPackage>;
+    public readonly event$: Observable<EventPackage[]>;
 
     constructor(readonly eventsService: EventsService) {
         this.event$ = eventsService.Events.pipe(
+            map((events) => {
+                return events.reduce<{ [key: string]: EventPackage[] }>((acc, curr) => {
+                    const name = curr.event.name.text;
+
+                    return {
+                        ...acc,
+                        [name]: acc[name] ? [...acc[name], curr] : [curr],
+                    };
+                }, {});
+            }),
+            map((x) => Object.values(x)),
+            map((x) => [...x].sort((a, b) => new Date(a[0].event.start.local).getTime() - new Date(b[0].event.start.local).getTime())),
             map((events) => {
                 const [one] = events;
 
