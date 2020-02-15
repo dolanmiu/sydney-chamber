@@ -8,6 +8,15 @@ $shade: rgba($text-color-inverse, .2);
     flex-direction: row;
 }
 
+.dates-container {
+    display: flex;
+    flex-direction: column;
+
+    :not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
 .date-link {
     color: $text-color-inverse;
 
