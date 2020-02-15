@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { NgxMasonryModule } from 'ngx-masonry';
 
 import { MusicianCardComponent } from './musician-card/musician-card.component';
 import { MusiciansComponent } from './musicians.component';
@@ -11,7 +10,6 @@ describe('MusiciansComponent', () => {
     beforeEach(async(() => {
         TestBed.configureTestingModule({
             declarations: [MusiciansComponent, MusicianCardComponent],
-            imports: [NgxMasonryModule],
         }).compileComponents();
     }));
 
