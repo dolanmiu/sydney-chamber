@@ -13,7 +13,3 @@
 app-event {
     margin-bottom: 24px;
 }
-
-@include respond-below(sm) {
-    padding: 0;
-}

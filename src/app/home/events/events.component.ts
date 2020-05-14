@@ -28,8 +28,7 @@ export class EventsComponent implements DoCheck {
                 }, {});
             }),
             map((x) => Object.values(x)),
-            map((x) => x.sort((a, b) => new Date(a[0].event.start.local).getTime() - new Date(b[0].event.start.local).getTime())),
-            map((obj) => ({ ...obj })),
+            map((x) => [...x].sort((a, b) => new Date(a[0].event.start.local).getTime() - new Date(b[0].event.start.local).getTime())),
         );
     }
 

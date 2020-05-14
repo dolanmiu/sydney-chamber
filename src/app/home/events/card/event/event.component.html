@@ -1,10 +1,12 @@
-<a class="date-link" target="_blank" href="{{ event.value[0].event.url }}">
-    <div class="date">
-        <div class="day">{{ event.value[0].event.start.local | date: 'd' }}</div>
-        <div class="month">{{ event.value[0].event.start.local | date: 'MMM' }}</div>
-        <div class="time">{{ event.value[0].event.start.local | date: 'shortTime' }}</div>
-    </div>
-</a>
+<div class="dates-container">
+    <a class="date-link" *ngFor="let instance of event.value" target="_blank" href="{{ instance.event.url }}">
+        <div class="date">
+            <div class="day">{{ instance.event.start.local | date: 'd' }}</div>
+            <div class="month">{{ instance.event.start.local | date: 'MMM' }}</div>
+            <div class="time">{{ instance.event.start.local | date: 'shortTime' }}</div>
+        </div>
+    </a>
+</div>
 
 <div class="info">
     <h2>{{ event.value[0].event.name.text }}</h2>
