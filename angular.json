@@ -30,7 +30,7 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                  "src/styles"
+                "src/styles"
               ]
             },
             "scripts": []
@@ -84,7 +84,7 @@
             ],
             "stylePreprocessorOptions": {
               "includePaths": [
-                  "src/styles"
+                "src/styles"
               ]
             },
             "scripts": [],
@@ -141,5 +141,8 @@
     "@schematics/angular:component": {
       "styleext": "scss"
     }
+  },
+  "cli": {
+    "analytics": "08a865fc-b8ae-45f5-8fc1-2c98fc490cbc"
   }
 }
