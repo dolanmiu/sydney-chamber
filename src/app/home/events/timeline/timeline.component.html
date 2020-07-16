@@ -6,9 +6,11 @@
         <div class="timeline-marker"></div>
         <div class="timeline-content">
             <h3 class="timeline-title">Event Title</h3>
-            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci
-                lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam
-                dictum felis eu pede mollis pretium. Pellentesque ut neque.</p>
+            <p>
+                Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus,
+                aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+                mollis pretium. Pellentesque ut neque.
+            </p>
         </div>
     </li>
     <li class="timeline-item">
@@ -18,9 +20,11 @@
         <div class="timeline-marker"></div>
         <div class="timeline-content">
             <h3 class="timeline-title">Event Title</h3>
-            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci
-                lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam
-                dictum felis eu pede mollis pretium. Pellentesque ut neque. </p>
+            <p>
+                Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus,
+                aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede
+                mollis pretium. Pellentesque ut neque.
+            </p>
         </div>
     </li>
     <li class="timeline-item period">
@@ -32,12 +36,12 @@
     </li>
     <li class="timeline-item" *ngFor="let event of events">
         <div class="timeline-info">
-            <span>{{event.date | date:'medium'}}</span>
+            <span>{{ event.date | date: 'medium' }}</span>
         </div>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
-            <h3 class="timeline-title">{{event.title}}</h3>
-            <p>{{event.description}}</p>
+            <h3 class="timeline-title">{{ event.title }}</h3>
+            <p>{{ event.description }}</p>
             <button class="ui primary button">
                 Book now
             </button>

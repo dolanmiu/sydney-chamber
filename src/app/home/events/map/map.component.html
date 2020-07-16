@@ -11,7 +11,8 @@
     [style.height.px]="height"
 >
     <div *ngFor="let pair of events | keyvalue">
-        <agm-marker *ngIf="pair.value[0].venue"
+        <agm-marker
+            *ngIf="pair.value[0].venue"
             [latitude]="pair.value[0].venue.latitude"
             [longitude]="pair.value[0].venue.longitude"
             [iconUrl]="iconOptions"

@@ -40,8 +40,7 @@ $breakpoints: (
     @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
         // Get the lower and upper breakpoints.
         $lower-breakpoint: map-get($breakpoints, $lower);
-        $upper-breakpoint: map-get($breakpoints, $upper);
-        // Write the media query.
+        $upper-breakpoint: map-get($breakpoints, $upper); // Write the media query.
         @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {
             @content;
         }

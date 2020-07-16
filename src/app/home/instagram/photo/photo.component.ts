@@ -7,7 +7,8 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PhotoComponent {
-    @Input() public photo: InstagramPhotoData;
+    @Input()
+    public photo: InstagramPhotoData;
 
     constructor() {}
 }

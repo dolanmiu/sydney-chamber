@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'media-queries';
 
-$bg-color: rgba($primary-color, .6);
+$bg-color: rgba($primary-color, 0.6);
 $text-color: darken($text-color-inverse, 0);
 
 $black: #000;
@@ -22,7 +22,7 @@ h1 {
 }
 
 .event-date {
-    line-height: .9em;
+    line-height: 0.9em;
 }
 
 .wrapper {

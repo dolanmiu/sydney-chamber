@@ -1,4 +1,4 @@
-$instagram-color: rgba(255, 255, 255, .6);
+$instagram-color: rgba(255, 255, 255, 0.6);
 
 :host {
     display: inline-block;
@@ -9,7 +9,7 @@ $instagram-color: rgba(255, 255, 255, .6);
 img {
     height: 100%;
     object-fit: cover;
-    transition: filter .4s;
+    transition: filter 0.4s;
     width: 100%;
 
     &:hover {

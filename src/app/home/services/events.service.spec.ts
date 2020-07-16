@@ -16,7 +16,8 @@ describe('EventsService', () => {
                 },
                 EventsService,
             ],
-        }));
+        }),
+    );
 
     it('should be created', () => {
         const service: EventsService = TestBed.get(EventsService);

@@ -3,7 +3,7 @@
 // sass-lint:disable no-important
 
 $nav-height: 100px;
-$hover-color: rgba($text-color-inverse, .6);
+$hover-color: rgba($text-color-inverse, 0.6);
 
 :host {
     background-color: $primary-color;

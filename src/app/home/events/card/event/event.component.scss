@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'media-queries';
 
-$shade: rgba($text-color-inverse, .2);
+$shade: rgba($text-color-inverse, 0.2);
 
 :host {
     display: flex;

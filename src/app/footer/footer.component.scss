@@ -3,10 +3,11 @@
 
 $bg-color: $primary-color;
 $bg-color-gradient-1: rgba($primary-color, 1);
-$bg-color-gradient-2: rgba($primary-color, .9);
+$bg-color-gradient-2: rgba($primary-color, 0.9);
 
 :host {
-    background: linear-gradient($bg-color-gradient-1 0%, $bg-color-gradient-1 10%, $bg-color-gradient-2 100%), url('/assets/footer/instrument-bg.png') repeat, $bg-color url('/assets/sydney-skyline.png') repeat-x center bottom;
+    background: linear-gradient($bg-color-gradient-1 0%, $bg-color-gradient-1 10%, $bg-color-gradient-2 100%),
+        url('/assets/footer/instrument-bg.png') repeat, $bg-color url('/assets/sydney-skyline.png') repeat-x center bottom;
     color: $text-color-inverse;
     display: block;
     position: relative;
@@ -46,8 +47,6 @@ $bg-color-gradient-2: rgba($primary-color, .9);
         font-size: 1rem;
     }
 }
-
-
 
 .skyline {
     bottom: 0;
