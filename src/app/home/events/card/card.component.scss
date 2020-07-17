@@ -13,3 +13,9 @@
 app-event {
     margin-bottom: 24px;
 }
+
+.no-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

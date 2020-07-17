@@ -2,7 +2,8 @@
 
 <app-event *ngFor="let event of events | keyvalue" [event]="event" (click)="selectEvent(event.value[0])"></app-event>
 
-<div *ngIf="events?.length === 0">
-    <p>No events currently scheduled!</p>
+<div *ngIf="events?.length === 0" class="no-events">
+    <i class="fas fa-frown-open fa-4x"></i>
+    <h3>No events currently scheduled!</h3>
     <p>Please check back at a later date.</p>
 </div>
